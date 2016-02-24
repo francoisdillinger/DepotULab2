@@ -1,0 +1,283 @@
+
+@import 'variables.less';
+
+
+
+
+
+html {
+    .reset;
+    
+       body {
+          .reset;
+       }
+}
+
+
+
+.banner {
+    min-width: 100%;
+    background-color: @outline-color;
+    position: fixed;
+    margin-top: -100px;
+    box-shadow: inset 0 0 15px 10px black;
+    
+            .nav-bar ul {
+            list-style-type: none;
+            padding: 0;
+            overflow: hidden;
+            padding: 20px 0;
+            max-width: 400px;
+            margin: 0 auto;
+            font-style: italic;
+            }
+}
+
+
+
+.nav-bar li {
+    float: left;
+}
+
+.nav-bar a {
+ color: @font-color;
+ display: inline-block;
+ padding: 10px 15px;
+ text-decoration: none;
+            }
+            
+ .nav-bar a:hover {
+ color: darken(white, 25%)
+  }
+
+
+ 
+
+
+
+.body {
+    max-width: 960px;
+    margin: 100px auto;
+}
+hr {
+    border-top: 2px solid @outline-color;
+    max-width: 960px;
+}
+
+.name {
+    text-align: center;
+    color: @font-color;
+}
+
+.job {
+    text-align: center;
+    color: @font-color;
+}
+
+.about {
+    overflow: hidden;
+    width: 100%;
+}
+
+.about h2 {
+    text-align: center;
+    color: @font-color;
+}
+
+.p1 {
+    display: inline-block;
+    max-width: 35%;
+    padding: 0 1% 0 13%;
+    text-align: left;
+    float: left;
+    color: @font-color;
+}
+
+.p2 {
+    display: inline-block;
+    max-width: 35%;
+    padding: 0 5px 0 15px;
+    text-align: left;
+    float: left;
+    color: @font-color;
+}
+
+.tech {
+    overflow: hidden;
+    width: 100%;
+}
+
+.tech h2 {
+    text-align: center;
+    color: @font-color;
+}
+
+.p3 {
+    display: inline-block;
+    max-width: 35%;
+    padding: 0 1% 0 13%;
+    text-align: left;
+    float: left;
+    color: @font-color;
+}
+
+.p4 {
+    display: inline-block;
+    max-width: 35%;
+    padding: 0 5px 0 15px;
+    text-align: left;
+    float: left;
+    color: @font-color;
+}
+
+.projects {
+    
+}
+.projects h2 {
+    text-align: center;
+    color: @font-color;
+}
+
+.projects h3 {
+    margin-left: 13%;
+    color: @font-color;
+} 
+
+.projects p {
+    margin-left: 13%;
+    color: @font-color;
+}
+
+.experience h2 {
+    text-align: center;
+    color: @font-color;
+}
+
+.experience h3 {
+    margin-left: 10%;
+    color: @font-color;
+}
+
+.experience h4 {
+    margin-left: 13%;
+    font-style: italic;
+    color: @font-color;
+}
+
+.experience p {
+    margin-left: 13%;
+    color: @font-color;
+}
+
+.education h2 {
+    text-align: center;
+    color: @font-color;
+}
+
+.education p {
+    margin-left: 13%;
+    color: @font-color;
+}
+
+.contact h2 {
+    text-align: center;
+    color: @font-color;
+}
+
+
+.form {
+    min-height: 350px;
+}
+
+fieldset {
+    width: 450px;
+    height: 350px;
+    background-color: @outline-color;
+    border-radius: 10px;
+    margin: 20px auto 40px;
+    box-shadow: inset 0 0 20px 15px black;
+}
+
+form {
+    margin-top: 30px;
+}
+
+fieldset label {
+    margin: 0 0 5% 22%;
+    font-size: 12px;
+    font-weight: bold;
+}
+.inputname {
+    .border-radius;
+    width: @form-field-width;
+    height: @form-field-height;
+    margin: 0 0 3% 22%;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.inputemail {
+    .border-radius;
+    width: @form-field-width;
+    height: @form-field-height;
+    margin: 0 0 3% 22%;
+    font-size: 16px;
+    font-style: italic;
+}
+
+textarea {
+    .border-radius;
+    width: 240px;
+    height: 80px;
+    background-color: white;
+    margin: 0 0 0 22%;
+    font-size: 16px;     
+}
+
+.button {
+    .border-radius;
+    width: @form-field-width;
+    height: @form-field-height;
+    margin: 0 0 5% 22%;
+    font-size: 16px;
+    background-color: white;
+    color: gray;
+}
+
+.button:hover {
+    .mixin(@outline-color);
+    color: darken(@outline-color, 50%)
+   
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: @outline-color;
+    padding: 5px 0 5px 0;
+    box-shadow: inset 0 0 20px 15px black;
+}
+
+
+footer a {
+       text-decoration: none;
+       color: @font-color;
+       
+       
+ }
+ 
+ footer .git {
+     margin-bottom: -10px;
+     padding-top: 20px;
+ }
+   
+ /*footer a:hover {
+       color: lighten(@font-color,100%)
+       } 
+ */   
+
+footer p {
+       font-style: italic;
+       color: @font-color;
+       padding-bottom: 10px;
+}

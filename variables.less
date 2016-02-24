@@ -1,0 +1,35 @@
+
+@font-color: #1d1d1e;
+@outline-color: gray;
+@form-field-width: 240px;
+@form-field-height: 25px;
+
+
+
+
+
+
+.reset {
+    margin: 0;
+    padding: 0;
+}
+
+.border-radius(@form-field--border-radius: 5px) {
+  -webkit-border-radius: @form-field--border-radius;
+     -moz-border-radius: @form-field--border-radius;
+          border-radius: @form-field--border-radius;
+}
+
+
+.mixin (@outline-color) when (lightness(@outline-color) >= 50%) {   
+  background-color: @outline-color;
+  border: 1px solid black;
+}
+
+.mixin (@outline-color) when (lightness(@outline-color) < 50%) {
+  background-color: white;
+}
+
+.mixin (@outline-color@a) {
+  color: @a@outline-color;
+}
